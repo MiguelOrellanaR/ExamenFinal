@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vuelos</title>
+</head>
+
+<body>
+
+    <div style="background-color:silver">
+        <center><p style="color:blue; font-size:50px">INFORMACIÓN DE VUELO</p></center>
+
+      <font color="Olive" face="Comic Sans MS,arial">
+         <h3><i><l>TIPO DE VUELO:</l></i></h3>
+       </font>
+    <select name="TIPO DE VUELO">
+
+        <option>Primera Clase</option>
+        <option>Segunda Clase</option>
+        <option>Tercera clase</option>
+    </select>
+    <br>
+
+    <font color="Olive" face="Comic Sans MS,arial">
+    <h3><i><l>PRECIOS:</l></i></h3>
+    </font>
+    PRIMERA CLASE    <br>
+        Comida:Q50.00<br> 
+        Bebida:Q35.00 <br>
+        Película:Q70.00<br> <br>
+    SEGUNDA CLASE    <br>
+        Comida:Q40.00<br> 
+        Bebida:Q25.00 <br>
+        Película:Q55.00<br> <br>
+    TERCERA CLASE    <br>
+        Comida:Q25.00<br> 
+        Bebida:Q10.00 <br>
+        Película:Q25.00<br> <br> 
+
+    <font color="Olive" face="Comic Sans MS,arial">
+        <h3><i><l>SERVICIOS:</l></i></h3>
+    </font>
+
+    <input type="checkbox"> Comida<br>
+    <input type="checkbox"> Bebida<br>
+    <input type="checkbox"> Agua<br><br><br>
+
+    <font color="Olive" face="Comic Sans MS,arial">
+        <h3><i><l>CANTIDAD DE SERVICIOS:</l></i></h3>
+    </font>
+    <p style=" font-size:15px">Comida</p>
+    <input type="text" name="nombredelacaja"><br>
+  <p style="font-size:15px">Bebida</p>
+    <input type="text" name="nombredelacaja"><br>
+    <p style="font-size:15px">Película</p>
+    <input type="text" name="nombredelacaja"><br>
+    <br>
+
+    <font color="Olive" face="Comic Sans MS,arial">
+        <h3><i><l>OPERACIÓN A REALIZAR:</l></i></h3>
+    </font>   
+    <input type="submit" value="Calcular" />
+    <input type="submit" value="Reporte" />
+    <input type="submit" value="Limpiar" /><br><br>
+
+<font color="Olive" face="Comic Sans MS,arial">
+    <h3><i><l>CERRAR SESIÓN:</l></i></h3>
+</font>
+<a href="{% url 'logout' %}"> Clicl aquí</a>
+</div>
+</body>
+
+</html>
